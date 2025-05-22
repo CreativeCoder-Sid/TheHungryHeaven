@@ -1,0 +1,84 @@
+/* Dashboard.css */
+
+.dashboard-wrapper {
+  height: 130vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #2a5298, #1e3c72);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 3rem;
+  
+  
+}
+
+.dashboard-card {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  padding: 3rem 3.5rem;
+  max-width: 450px;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+  box-shadow: 0 16px 40px rgba(31, 38, 135, 0.6);
+}
+
+.dashboard-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 900;
+  letter-spacing: 1.3px;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+}
+
+.dashboard-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  margin-bottom: 2.5rem;
+}
+
+.dash-btn {
+  padding: 1rem 1.5rem;
+  border-radius: 14px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%);
+  color: #2c2c2c;
+  box-shadow: 0 10px 30px rgba(255, 210, 0, 0.7);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dash-btn:hover {
+  background: linear-gradient(135deg, #ffd200 0%, #f7971e 100%);
+  box-shadow: 0 14px 40px rgba(255, 210, 0, 0.9);
+}
+
+.logout-btn {
+  padding: 1rem 1.5rem;
+  border-radius: 14px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: #ff4b5c;
+  color: white;
+  box-shadow: 0 10px 25px rgba(255, 75, 92, 0.7);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: #ff1c2b;
+  box-shadow: 0 14px 40px rgba(255, 28, 43, 0.9);
+}

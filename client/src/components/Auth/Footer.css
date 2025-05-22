@@ -1,0 +1,168 @@
+.footer{
+    color: #d9d9d9;
+    background-color: #323232;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    gap: 20px;
+    padding: 20px 8vw;
+    padding-top: 80px;
+    
+    
+}
+
+.footer-content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    gap: 80px;
+    
+}
+
+/* .footer-content-1 , .footer-content-2 , .footer-content-3 , .footer-content-4{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+} */
+.footer-content-1 li, .footer-content-2 li, .footer-content-3 li, .footer-content-4 li{
+    list-style: none;
+    margin-bottom: 8px;
+}
+.footer-content-2 h3, .footer-content-3 h3, .footer-content-4 h3{
+    color: white;
+}
+
+.footer-content-3 h3{
+    margin-left: 10px;
+}
+.footer-content-4 i{
+    margin-right: 5px;
+}
+
+.footer hr{
+    width: 100%;
+    height: 2px;
+    margin: 20px 0;
+    background-color: grey;
+    /* border: none; */
+}
+
+@media (max-width:750px){
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    .footer-copyright{
+        text-align: center;
+    }
+}
+.footer-content-1 img{
+    height: 80px;
+    width: 180px;
+}
+.footer {
+  background-color: #111;
+  color: #eee;
+  padding: 50px 20px 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1 1 220px;
+  min-width: 220px;
+}
+
+.footer-logo {
+  max-width: 150px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.footer-description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social-icons a {
+  font-size: 1.6rem;
+  color: #bbb;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-social-icons a:hover {
+  color: #6a11cb; /* nice purple */
+  transform: scale(1.2);
+}
+
+.footer-addresses address p {
+  font-style: normal;
+  line-height: 1.6;
+  color: #ddd;
+  margin-bottom: 10px;
+}
+
+.footer-hours ul,
+.footer-contact ul {
+  list-style: none;
+  padding-left: 0;
+  color: #ddd;
+  font-size: 0.95rem;
+}
+
+.footer-hours li,
+.footer-contact li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-contact i {
+  margin-right: 10px;
+  color: #6a11cb;
+  font-size: 1.2rem;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #333;
+  margin: 40px auto 20px;
+  max-width: 1200px;
+}
+
+.footer p.footer-copyright {
+  color: #777;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer-section {
+    min-width: auto;
+  }
+}

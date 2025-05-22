@@ -1,0 +1,81 @@
+/* #food-img{
+    size: 100%;
+    height: 300px;;
+    
+  }
+  
+  #chinese-food-top-space{
+    top: 40px;
+  }
+  #chinese-food-middle-space{
+    margin-top: 20px;
+    
+  }
+  .d-flex{
+    padding:2px;
+    margin: 2px;
+    
+  }
+  #chinese-indian-heading{
+    color: rgb(37, 87, 87);
+    text-align: center;
+    margin: 20px;
+    margin-top: 5%;
+  }
+  #chinese-food-last-space{
+    align-items:left;
+  } */
+
+  /* #chinese-food-h3{
+    text-align: center;
+    color:rgb(203, 5, 5);
+   }
+  
+  
+   #food-img{
+    size: 100%;
+    height: 300px; 
+    
+    
+  }
+  
+  #chinese-food-top-space{
+    top: 40px;
+  }
+  #chinese-food-middle-space{
+    margin-top: 20px;
+    
+  }
+  .d-flex{
+    padding:2px;
+    margin: 2px;
+    
+  
+  #chinese-food-heading{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 20px;
+  }
+  #chinese-food-last-space{
+    align-items:left;
+  }  */
+
+  .Chinese{   
+    background-color: rgb(234, 219, 194);
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+  .d-flex{
+    padding:2px;
+    margin: 2px;
+    
+  }
+  #chinese-food-middle-space{
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+#chinese-food-top-space{
+  flex-wrap: wrap;
+  gap: 20px;
+}

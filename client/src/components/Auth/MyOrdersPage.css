@@ -1,0 +1,170 @@
+body{
+  background-color: #4b2e83;
+}
+.my-orders-container {
+  max-width: 700px;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  padding: 80px;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.my-orders-container h1 {
+  text-align: center;
+  color: #4b2e83;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7);
+}
+
+.orders-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.order-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(75, 46, 131, 0.2);
+  width: 280px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.order-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(75, 46, 131, 0.4);
+}
+
+.order-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 3px solid #fda085;
+}
+
+.order-details {
+  padding: 15px 0px;
+  padding-right: 80px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.order-details h3 {
+  color: #4b2e83;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.order-details p {
+  font-size: 14px;
+  margin: 4px 0;
+  color: #555;
+}
+
+.cancel-btn {
+  margin-top: auto;
+  padding: 10px;
+  background: #ff5c5c;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cancel-btn:hover {
+  background: #e04040;
+}
+
+.cancel-btn.disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  color: #888;
+}
+
+.pay-bill-summary {
+  margin-top: 40px;
+  background: #4b2e83;
+  color: #f6d365;
+  padding: 25px 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(75, 46, 131, 0.6);
+}
+
+.pay-bill-summary h2 {
+  margin-bottom: 15px;
+  font-size: 28px;
+  font-weight: 700;
+  text-shadow: 1px 1px 4px #fda085;
+}
+
+.pay-bill-summary p {
+  font-size: 18px;
+  margin: 6px 0;
+}
+
+.pay-bill-summary h3 {
+  font-size: 22px;
+  margin: 15px 0;
+  font-weight: 800;
+  text-shadow: 1px 1px 3px #fda085;
+}
+
+.pay-button {
+  background: #fda085;
+  border: none;
+  padding: 12px 28px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #4b2e83;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.pay-button:hover {
+  background: #f6d365;
+}
+
+.orders-loading,
+.orders-error,
+.orders-empty {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 80px;
+  font-weight: 600;
+  color: #4b2e83;
+  text-shadow: 1px 1px 2px #fda085;
+}
+/* MyOrdersPage.css or global */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+}

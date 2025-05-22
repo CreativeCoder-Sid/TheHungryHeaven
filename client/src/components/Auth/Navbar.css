@@ -1,0 +1,568 @@
+body{
+    /* background-image:url("../../assets/eat-food.jpg"); */
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+    display: flow-root;
+    background-color: #6c63ff;
+    
+  }
+  
+
+  #navbarScroll{
+    color: rgb(0, 0, 0);
+  }
+  
+  
+  
+  #logo{
+    height: 20px;
+    width: 50px;
+    margin-right: 30px;
+    size: 30px;
+  }
+  
+  #logo-name{
+    font-family:cursive;
+    color:rgb(238, 33, 33);
+    font-weight: bold;
+    justify-content: center;
+    font-size: 22px;
+    margin-right: 50px;
+  }
+  
+  #navbarScrollingDropdown{
+    font-weight: bold;
+    margin-right: 0;
+  }
+  
+  .lex{
+    display: flex;
+    margin-left: 370px;
+  }
+  
+ #logsin {
+  margin-left: 15px;
+  border: 2px solid rgb(105, 151, 215);
+  border-radius: 10px;
+  padding: 6px 12px;
+  font-weight: bold;
+  background-color: white;
+  width: auto !important; /* ✅ Force auto width */
+}
+
+#logsin:hover {
+  background-color: #4f2830;
+  color: white;
+}
+
+  
+  .nav-ele{
+    font-weight: bold;
+  }
+  
+  header{
+    position:fixed;
+    z-index:9999;
+    margin-top: 0%;
+    background-color: transparent;
+    margin-bottom:2% ;
+    width: 100%;
+  }
+  
+
+  
+  /* Navbar.css */
+#navbarrr {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  padding: 14px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+#logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+#logo-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff !important;
+  text-shadow: 0 1px 4px #aaa;
+  margin-left: 12px;
+}
+
+.nav-ele {
+  color: #eee !important;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.nav-ele:hover {
+  color: #f3bafd !important;
+  text-shadow: 0 0 6px #f3bafd;
+}
+
+.glow-on-hover {
+  background: linear-gradient(135deg, #8a2be2, #6c63ff);
+  color: #fff;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 15px rgba(140, 100, 255, 0.5);
+}
+
+.glow-on-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(165, 110, 255, 0.8);
+}
+
+#logsin .dropdown-toggle {
+  color: #fff !important;
+  font-weight: 600;
+}
+
+#logsin .dropdown-menu {
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#logsin .dropdown-item {
+  color: #eee;
+  transition: 0.2s ease;
+}
+
+#logsin .dropdown-item:hover {
+  background-color: #6c63ff;
+  color: white;
+}
+
+.logout-glow {
+  color: #ff5b5b !important;
+}
+
+.logout-glow:hover {
+  background-color: #ff5b5b;
+  color: #fff !important;
+}
+
+.form-control::placeholder {
+  color: #ccc;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 8px #6c63ff;
+  border-color: #6c63ff;
+}
+/* Sticky navbar scroll shadow */
+#navbarrr {
+  position: sticky;
+  top: 0;
+  z-index: 1050;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-shadow {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background-color: var(--bs-body-bg);
+}
+
+/* Dark/Light mode */
+body.dark-mode {
+  --bs-body-bg: #1a1a2e;
+  --bs-body-color: #fff;
+  --bs-navbar-bg: #111827;
+  --bs-navbar-color: #fff;
+}
+
+body.light-mode {
+  --bs-body-bg: #fff;
+  --bs-body-color: #000;
+  --bs-navbar-bg: #f8f9fa;
+  --bs-navbar-color: #000;
+}
+
+/* Slide-down animation for mobile menu */
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar-collapse.show {
+  animation: slideDown 0.3s ease-in-out;
+}
+#navbarrr {
+  position: sticky;
+  top: 0;
+  z-index: 1050;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-shadow {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  background-color: var(--bs-body-bg);
+}
+
+body.dark-mode {
+  --bs-body-bg: #1a1a2e;
+  --bs-body-color: #fff;
+  --bs-navbar-bg: #111827;
+  --bs-navbar-color: #fff;
+}
+
+body.light-mode {
+  --bs-body-bg: #fff;
+  --bs-body-color: #000;
+  --bs-navbar-bg: #f8f9fa;
+  --bs-navbar-color: #000;
+}
+
+.mobile-menu {
+  animation: slideDown 0.3s ease-in-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logout-glow:hover {
+  background-color: #ff4d4d !important;
+  color: white !important;
+}
+/* Sticky navbar shadow */
+#navbarrr.navbar-shadow {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Glow button effect */
+.glow-on-hover {
+  transition: all 0.3s ease;
+  box-shadow: 0 0 8px #6c63ff66;
+}
+.glow-on-hover:hover {
+  box-shadow: 0 0 20px #6c63ffcc;
+  transform: scale(1.05);
+}
+
+/* Search results dropdown */
+.search-results-dropdown {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  max-height: 250px;
+  overflow-y: auto;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  z-index: 1050;
+}
+
+.search-result-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #333;
+  transition: background-color 0.2s;
+}
+
+.search-result-item:hover {
+  background-color: #6c63ff22;
+  color: #6c63ff;
+}
+
+/* Mobile menu animation */
+@media (max-width: 991px) {
+  .mobile-menu {
+    animation: fadeInSlideDown 0.35s ease forwards;
+  }
+
+  @keyframes fadeInSlideDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+.search-results-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  z-index: 1000;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.search-result-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.search-result-item:hover {
+  background-color: #f1f1f1;
+}
+
+
+ 
+  
+  
+
+  
+  
+  
+/* body{
+    background-image: url("C:\Users\hp\Downloads\Auth\Auth\client\public\eat-food.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+    display: flow-root;
+    
+  }
+  
+
+  #navbarScroll{
+    color: rgb(0, 0, 0);
+  }
+  
+  
+  
+  #logo{
+    height: 30px;
+    width: 50px;
+    margin-right: 30px;
+    size: 30px;
+  }
+  
+  #logo-name{
+    font-family:cursive;
+    color:rgb(238, 33, 33);
+    font-weight: bold;
+    justify-content: center;
+    font-size: 22px;
+    margin-right: 50px;
+  }
+  
+  #navbarScrollingDropdown{
+    font-weight: bold;
+    margin-right: 0;
+  }
+  
+  .lex{
+    display: flex;
+    margin-left: 370px;
+  }
+  
+  #logsin{
+    margin-left: 20px;
+    margin-right: 0px;
+    border: 3px solid rgb(105, 151, 215);
+    border-radius: 15px;
+    font-weight: bold;
+  }
+  #logsin:hover{
+    background-color: #4f2830;
+    color: white;
+  }  
+  
+  .nav-ele{
+    font-weight: bold;
+  }
+  
+  header{
+    position:fixed;
+    z-index:9999;
+    margin-top: 0%;
+    background-color: transparent;
+    margin-bottom:2% ;
+    width: 100%;
+  }
+
+  
+  
+ 
+  
+  
+
+  
+  
+  
+   
+   
+body{
+    background-image: url("C:\Users\hp\Downloads\Auth\Auth\client\public\eat-food.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+    display: flow-root;
+    
+  }
+  
+
+  #navbarScroll{
+    color: rgb(0, 0, 0);
+  }
+  
+  
+  
+  #logo{
+    height: 30px;
+    width: 50px;
+    margin-right: 30px;
+    size: 30px;
+  }
+  
+  #logo-name{
+    font-family:cursive;
+    color:rgb(238, 33, 33);
+    font-weight: bold;
+    justify-content: center;
+    font-size: 22px;
+    margin-right: 50px;
+  }
+  
+  #navbarScrollingDropdown{
+    font-weight: bold;
+    margin-right: 0;
+  }
+  
+  .lex{
+    display: flex;
+    margin-left: 370px;
+  }
+  
+  #logsin{
+    margin-left: 20px;
+    margin-right: 0px;
+    border: 3px solid rgb(105, 151, 215);
+    border-radius: 15px;
+    font-weight: bold;
+  }
+  #logsin:hover{
+    background-color: #4f2830;
+    color: white;
+  }  
+  
+  .nav-ele{
+    font-weight: bold;
+  }
+  
+  header{
+    position:fixed;
+    z-index:9999;
+    margin-top: 0%;
+    background-color: transparent;
+    margin-bottom:2% ;
+    width: 100%;
+  }
+
+  
+  
+ 
+  
+  
+
+  
+  
+  
+body{
+    background-image: url("C:\Users\hp\Downloads\Auth\Auth\client\public\eat-food.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+    display: flow-root;
+    
+  }
+  
+
+  #navbarScroll{
+    color: rgb(0, 0, 0);
+  }
+  
+  
+  
+  #logo{
+    height: 30px;
+    width: 50px;
+    margin-right: 30px;
+    size: 30px;
+  }
+  
+  #logo-name{
+    font-family:cursive;
+    color:rgb(238, 33, 33);
+    font-weight: bold;
+    justify-content: center;
+    font-size: 22px;
+    margin-right: 50px;
+  }
+  
+  #navbarScrollingDropdown{
+    font-weight: bold;
+    margin-right: 0;
+  }
+  
+  .lex{
+    display: flex;
+    margin-left: 600px;
+  }
+  
+  #logsin{
+    margin-left: 160px;
+    margin-right: 0px;
+    border: 3px solid rgb(105
+    , 151, 215);
+    border-radius: 15px;
+    font-weight: bold;
+  }
+  #logsin:hover{
+    background-color: #4f2830;
+    color: white;
+  }  
+  
+  .nav-ele{
+    font-weight: bold;
+  }
+  
+  header{
+    position:fixed;
+    z-index:9999;
+    margin-top: 0%;
+    background-color: transparent;
+    margin-bottom:2% ;
+  }
+  .glow-on-hover{
+    margin-left: 100px;
+  }
+   */

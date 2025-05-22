@@ -1,0 +1,178 @@
+
+
+.order-details {
+  width: 22rem;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.food-image {
+  width: 100%;
+  height: auto;
+}
+
+.quantity-selector,
+.table-selector {
+  margin: 10px 0;
+  padding: 5px;
+  width: 100%;
+}
+
+.confirm-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.order-confirmation {
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  min-height: 100vh;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.order-confirmation > div {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+  width: 350px;
+  padding: 30px 25px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.order-confirmation > div:hover {
+  transform: translateY(-8px);
+}
+
+.order-confirmation h1 {
+  font-weight: 700;
+  color: #ff6f61;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.order-confirmation h2 {
+  margin: 15px 0;
+  font-size: 1.5rem;
+  color: #444;
+}
+
+.order-confirmation img {
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.order-confirmation img:hover {
+  transform: scale(1.05);
+}
+
+.order-confirmation p {
+  font-size: 1rem;
+  margin: 10px 0 15px;
+  color: #555;
+}
+
+.order-confirmation label {
+  display: block;
+  font-weight: 600;
+  margin: 10px 0 5px;
+  text-align: left;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.order-confirmation select,
+.order-confirmation textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: none;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+.order-confirmation select:focus,
+.order-confirmation textarea:focus {
+  border-color: #ff6f61;
+  outline: none;
+}
+
+.order-confirmation button {
+  padding: 80px 20px 40px;
+  margin-top: 20px;
+  width: 100%;
+  background: #ff6f61;
+  border: none;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(255, 111, 97, 0.5);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.order-confirmation button:hover:not(:disabled) {
+  background-color: #ff4a3a;
+  box-shadow: 0 8px 18px rgba(255, 74, 58, 0.7);
+}
+
+.order-confirmation button:disabled {
+  cursor: not-allowed;
+  background-color: #ffa093;
+  box-shadow: none;
+  opacity: 0.7;
+
+}
+h1 {
+  text-align: center;
+  margin-top: 80px; /* Push down so it's not behind the navbar */
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+.order-confirmation {
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  min-height: 100vh;
+  padding-top: 70px; /* Prevent overlap with navbar */
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order-confirmation h1 {
+  font-weight: 700;
+  color: #ff6f61;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.order-confirmation > div {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+  width: 350px;
+  padding: 30px 25px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+

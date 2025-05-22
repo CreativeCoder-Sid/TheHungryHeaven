@@ -1,0 +1,121 @@
+.login-signup{
+    background: #4c00b4;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    }
+    
+    
+    .container-logsign{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        height: 550px;
+        width: 600px;
+        background: #fff;
+        padding-bottom: 30px;
+        border-radius: 30px;
+    }
+    .header-logsign{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 9px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .text-logsign{
+        color: #3c009d;
+        font-size: 45px;
+        font-weight: 700;
+    
+    }
+    .underline{
+        width: 61px;
+        height: 6px;
+        background: #3c009d;
+        border-radius: 9px;
+    }
+    .inputs-logsign{
+        margin-top: 55px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .input-logsign{
+        display: flex;
+        align-items: center;
+        margin: auto;
+        width: 480px;
+        height: 65px;
+        background: #eaeaea;
+        border-radius: 30px;
+        margin-top: 20px;
+    }
+    
+    .input-logsign i{
+        margin: 0px 30px;
+    }
+    
+    .input-logsign input{
+        height: 50px;
+        width: 400px;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 19px;
+        color: #797979;
+    }
+    
+    .forget-password{
+        padding-left: 34%;
+        padding-top: 1%;
+        margin-top: 27px;
+        color: #797979;
+        font-size: 18px;
+        
+    
+    }
+    
+    .forget-password span{
+        color: #4c00b4;
+        cursor: pointer;
+        
+    }
+    
+    .submit-container{
+        display: flex;
+        gap: 30px;
+        margin: 60px auto;
+    }
+    .submit{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 220px;
+        height: 59px;
+        color: #fff;
+        background: #4c00b4;
+        border-radius: 50px;
+        font-size: 19px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    .gray{
+        
+        background: #7e7c7c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 220px;
+        height: 59px;
+        color: #fff;
+        border-radius: 50px;
+        font-size: 19px;
+        font-weight: 700;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    link{
+        text-decoration: none;
+    }

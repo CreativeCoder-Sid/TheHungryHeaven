@@ -1,0 +1,55 @@
+.profile-container {
+  max-width: 500px;
+  margin: 40px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-card {
+  background: #fff;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+  border-radius: 12px;
+  padding: 30px 40px;
+  text-align: left;
+}
+
+.profile-card h2 {
+  margin-bottom: 24px;
+  color: #333;
+  border-bottom: 2px solid #4a90e2;
+  padding-bottom: 8px;
+  font-weight: 700;
+}
+
+.profile-card p {
+  font-size: 1.1rem;
+  margin: 12px 0;
+  color: #555;
+}
+
+.edit-btn {
+  margin-top: 24px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #357ABD;
+}
+
+.loading,
+.error {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 40px;
+  color: #666;
+}
+
+.error {
+  color: #c0392b;
+}

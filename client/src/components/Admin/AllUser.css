@@ -1,0 +1,94 @@
+.allusers-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 80px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.allusers-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.allusers-header h1 {
+  font-size: 2.5rem;
+  color: #007bff;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+
+.user-count {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.loading-text,
+.no-users-text {
+  font-size: 1.1rem;
+  text-align: center;
+  color: #666;
+  margin-top: 2rem;
+}
+
+.users-table {
+margin-top: 3rem;
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.users-table thead {
+  background-color: #007bff;
+  color: white;
+}
+
+.users-table th,
+.users-table td {
+  padding: 0.85rem 1rem;
+  text-align: left;
+  font-size: 1rem;
+  border-bottom: 1px solid #ddd;
+  word-break: break-word;
+}
+
+.users-table tbody tr.even-row {
+  background-color: #f9faff;
+}
+
+.users-table tbody tr.odd-row {
+  background-color: #fff;
+}
+
+.users-table tbody tr:hover {
+  background-color: #e6f0ff;
+  cursor: default;
+}
+
+.user-id {
+  font-family: monospace;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.role-badge {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: white;
+  user-select: none;
+}
+
+.role-badge.admin {
+  background-color: #28a745; /* green */
+}
+
+.role-badge.user {
+  background-color: #17a2b8; /* teal */
+}
