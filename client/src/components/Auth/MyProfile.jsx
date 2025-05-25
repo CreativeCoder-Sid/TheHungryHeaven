@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import API from '../../api/axios';
-import EditProfileModal from './EditProfileModal'; // Assume you create this modal component
+import EditProfileModal from './EditProfileModal';
 import './Profile.css';
+import { FaEdit, FaUserCircle } from 'react-icons/fa';
 
 const Profile = () => {
   const [profile, setProfile] = useState(null);
@@ -13,11 +14,9 @@ const Profile = () => {
     const fetchProfile = async () => {
       try {
         const token = localStorage.getItem('token');
-
         const response = await API.get('/profile', {
           headers: { Authorization: `Bearer ${token}` },
         });
-
         setProfile(response.data);
       } catch (err) {
         setError('Failed to load profile.');
@@ -35,18 +34,17 @@ const Profile = () => {
 
   return (
     <div className="profile-container">
-      <div className="profile-card">
-        <h2>My Profile</h2>
-        <p><strong>Name:</strong> {profile.name}</p>
-        <p><strong>Email:</strong> {profile.email}</p>
-        <p><strong>Phone:</strong> {profile.phone}</p>
-        <p><strong>Role:</strong> {profile.role}</p>
-
-        <button
-          className="edit-btn"
-          onClick={() => setIsEditOpen(true)}
-        >
-          Edit Profile
+      <div className="profile-card glass-effect">
+        <FaUserCircle className="avatar-icon" />
+        <h2 className="profile-title">My Profile</h2>
+        <div className="profile-info">
+          <p><strong>Name:</strong> {profile.name}</p>
+          <p><strong>Email:</strong> {profile.email}</p>
+          <p><strong>Phone:</strong> {profile.phone}</p>
+          <p><strong>Role:</strong> {profile.role}</p>
+        </div>
+        <button className="edit-btn" onClick={() => setIsEditOpen(true)}>
+          <FaEdit style={{ marginRight: '8px' }} /> Edit Profile
         </button>
       </div>
 
